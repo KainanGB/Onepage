@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h1,
+h3,
+small,
+p {
+  color: var(--clr-gray);
+}
+
+button {
+  font-family: var(--ff-secondary);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+:root {
+  --clr-primary: #04c35c;
+  --clr-primary-light: #2b6cb0;
+  --clr-neutral-white1: #ffffff;
+  --clr-neutral-white2: #f7fafc;
+  --clr-gray: #1a202c;
+  --clr-input: #e8e8e8;
+  --clr-anchor: #2b6cb0;
+  --ff-primary: "Merriweather", serif;
+  --ff-secondary: "Lato", sans-serif;
+  --fz-primary: 1.625rem;
+  --fz-secondary: 1rem;
+}
+
+.main__body {
+  display: flex;
+}
+.main__image {
+  background-color: var(--clr-neutral-white2);
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+}
+.main__image .img {
+  background-image: url(../img/undraw-login-img.jpg);
+  background-size: 23rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 12rem;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+.main__form {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main__form .container {
+  width: 26rem;
+}
+.main__form .container .form__title {
+  font-size: --fz-primary;
+}
+.main__form .container .form__welcome {
+  font-size: var(--fz-secondary);
+}
+.main__form .container .form__email-input,
+.main__form .container .form__password-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+.main__form .container .form__email-input .email__small,
+.main__form .container .form__email-input .password__small,
+.main__form .container .form__password-input .email__small,
+.main__form .container .form__password-input .password__small {
+  padding: 0 0 0.5rem 0;
+}
+.main__form .container .form__email-input input,
+.main__form .container .form__password-input input {
+  padding: 1rem;
+  border: var(--clr-input) solid 0.1rem;
+  border-radius: 1rem;
+}
+.main__form .container .extra__information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.main__form .container .extra__information .radio {
+  color: var(--clr-gray);
+}
+.main__form .container .extra__information .forgot__password {
+  color: var(--clr-anchor);
+}
+.main__form .container .login__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.main__form .container .login__buttons button {
+  color: var(--clr-neutral-white1);
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+.main__form .container .login__buttons button:nth-child(2) {
+  background-color: var(--clr-gray);
+}/*# sourceMappingURL=style.css.map */
