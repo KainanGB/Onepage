@@ -15,38 +15,42 @@
         </div>
 
         <form class="main__form">
-          <div class="container">
-            <div class="form__introduction">
-              <h3 class="form__welcome">Bem vindo de volta</h3>
-              <h1 class="form__title">Faça login na sua conta</h1>
+          <div class="form__introduction">
+            <h3 class="form__welcome">Bem vindo de volta</h3>
+            <h1 class="form__title">Faça login na sua conta</h1>
+          </div>
+
+          <div class="form__email-input">
+            <small class="email__small">E-mail</small>
+            <input type="text" name="email" class="email__input" />
+          </div>
+
+          <div class="form__password-input">
+            <small class="password__small">Senha</small>
+            <input type="text" name="password" class="password__input" />
+          </div>
+
+          <div class="extra__information">
+            <div class="radio">
+              <input type="radio" name="rememeber-me" id="" />
+              <span>Lembre de mim</span>
             </div>
-  
-            <div class="form__email-input">
-              <small class="email__small">E-mail</small>
-              <input type="text" name="email" class="email__input" />
-            </div>
-  
-            <div class="form__password-input">
-              <small class="password__small">Senha</small>
-              <input type="text" name="password" class="password__input" />
-            </div>
-  
-            <div class="extra__information">
-              <div class="radio">
-                <input type="radio" name="rememeber-me" id="" />
-                <span>Lembre de mim</span>
-              </div>
-              <a href="__blank" class="forgot__password">Esqueceu sua senha?</a>
-            </div>
-  
-            <div class="login__buttons">
-              <button type="submit" class="login__default">Entrar</button>
-  
-              <button type="submit" class="login__google">
-                Ou faça login com o Google
-              </but>
-            </div>
-  
+            <a href="__blank" class="forgot__password">Esqueceu sua senha?</a>
+          </div>
+
+          <div class="login__buttons">
+            <button type="submit" class="login__buttons--default">
+              Entrar
+            </button>
+
+            <button type="submit" class="login__buttons--google">
+              <img
+                src="./img/google-icon.svg"
+                alt="google-icon"
+                style="max-width: 15px"
+              />
+              Ou faça login com o Google
+            </button>
           </div>
         </form>
       </div>

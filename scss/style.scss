@@ -8,9 +8,10 @@
     background-color: var(--clr-neutral-white2);
     display: flex;
     height: 100vh;
-    width: 50vw;
+    width: 35vw;
     justify-content: center;
     align-items: center;
+    padding: 0 5rem;
 
     & .img {
       background-image: url(../img/undraw-login-img.jpg);
@@ -18,75 +19,84 @@
       background-repeat: no-repeat;
       width: 100%;
       padding: 12rem;
-      margin-left: 10rem;
       margin-top: 5rem;
+      margin-left: 2rem;
     }
   }
 
   &__form {
-    width: 50vw;
+    //width: 30rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 0 9rem;
+    & .form__title {
+      font-size: --fz-primary;
+    }
 
-    & .container {
-      width: 26rem;
+    & .form__welcome {
+      font-size: var(--fz-secondary);
+    }
 
-      & .form__title {
-        font-size: --fz-primary;
+    & .form__email-input,
+    .form__password-input {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0;
+      width: 100%;
+
+      & .email__small,
+      .password__small {
+        padding: 0 0 0.5rem 0;
       }
 
-      & .form__welcome {
-        font-size: var(--fz-secondary);
+      & input {
+        padding: 1rem;
+        border: var(--clr-input) solid 0.1rem;
+        border-radius: 1rem;
+      }
+    }
+
+    & .extra__information {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      width: 100%;
+
+      & .radio {
+        color: var(--clr-gray);
       }
 
-      & .form__email-input,
-      .form__password-input {
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem 0;
-
-        & .email__small,
-        .password__small {
-          padding: 0 0 0.5rem 0;
-        }
-
-        & input {
-          padding: 1rem;
-          border: var(--clr-input) solid 0.1rem;
-          border-radius: 1rem;
-        }
+      & .forgot__password {
+        color: var(--clr-anchor);
       }
+    }
 
-      & .extra__information {
+    & .login__buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      & button {
+        border: none;
+        border-radius: 0.5rem;
+        color: var(--clr-neutral-white1);
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+      &--default {
+        background-color: var(--clr-primary);
+      }
+      &--google {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 1rem 0;
-
-        & .radio {
-          color: var(--clr-gray);
-        }
-
-        & .forgot__password {
-          color: var(--clr-anchor);
-        }
-      }
-
-      & .login__buttons {
-        display: flex;
-        flex-direction: column;
-        & button {
-          color: var(--clr-neutral-white1);
-          background-color: var(--clr-primary);
-          border: none;
-          border-radius: 1rem;
-          padding: 1rem;
-          margin: 0.5rem 0;
-        }
-        & button:nth-child(2) {
-          background-color: var(--clr-gray);
+        justify-content: center;
+        background-color: var(--clr-gray);
+        & img {
+          margin-right: 0.2rem;
+          margin-top: 0.1rem;
         }
       }
     }
